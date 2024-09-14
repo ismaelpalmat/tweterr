@@ -59,3 +59,5 @@ end
 gem "annotate", "~> 3.2"
 
 gem "faker", "~> 3.4"
+
+gem "pagy", "~> 9.0"
