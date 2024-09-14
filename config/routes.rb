@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :contacts
+  resources :contacts, only: %i[new create]
   get "pages/home"
   get "pages/terms"
   get "pages/faq"
