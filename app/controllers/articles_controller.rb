@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles or /articles.json
   def index
-    @pagy, @articles = pagy(Article.all)
+    @pagy, @articles = pagy(Article.where(available: true))
   end
 
   # GET /articles/1 or /articles/1.json
